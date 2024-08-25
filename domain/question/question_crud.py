@@ -8,3 +8,8 @@ def get_question_list(db: Session):
                       .order_by(Question.create_date.desc())
                       .all())
     return _question_list
+
+
+def get_question(db: Session, question_id: int):
+    question = db.get(Question, question_id)
+    return question
