@@ -5,7 +5,7 @@ from models import Question
 
 def get_question_list(db: Session):
     _question_list = (db.query(Question)
-                      .order_by(Question.create_date.desc())
+                      .order_by(Question.create_date.desc())  # 최신 질문순
                       .all())
     return _question_list
 

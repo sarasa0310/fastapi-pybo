@@ -4,7 +4,7 @@
   import Detail from "./routes/Detail.svelte"
 
   const routes = {
-    '/': Home,
+      '/': Home,
       '/detail/:question_id':Detail,
   }
 </script>
